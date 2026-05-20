@@ -112,7 +112,7 @@ development_status:
       epic_id: E1
       story_id: E1-S1
       title: Scaffold Standalone Bottom-Up LENS Module Skeleton
-      status: in-progress
+      status: done
       depends_on: []
       expected_story_file: stories/E1-S1.md
     - item_type: story
