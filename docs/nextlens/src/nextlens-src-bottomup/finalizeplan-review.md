@@ -1,7 +1,7 @@
 ---
 feature: nextlens-src-bottomup
 doc_type: finalizeplan-review
-status: review-generated
+status: responses-recorded
 phase: finalizeplan
 source: phase-complete
 verdict: pass-with-warnings
@@ -136,15 +136,29 @@ Remaining accepted findings H2, M1, M2, M3, M4, and M5 are carried forward into 
 | M4 | `implementation-readiness.md` must trace PRD/UX to the constitution's `business-plan` planning requirement and `architecture.md` to the `tech-plan` requirement for this full-track feature. |
 | M5 | FinalizePlan must produce `stories.md`, `sprint-status.yaml`, `implementation-readiness.md`, and story files with required frontmatter before dev readiness. |
 
+## Post-Bundle Metadata Reconciliation
+
+The downstream bundle was generated after the review-driven planning fixes above. Post-bundle reconciliation results:
+
+- H1 satisfied: `epics.md`, `stories.md`, `implementation-readiness.md`, `sprint-status.yaml`, and all generated story files name `NextLens` / `TargetProjects/nextlens/src/NextLens` as the implementation target and repeat forbidden Lens/governance/runtime write surfaces.
+- H2 satisfied: predecessor and current review findings are mapped through `epics.md`, `stories.md`, `implementation-readiness.md`, `sprint-status.yaml`, and individual story acceptance/context sections.
+- M1 satisfied: E2-S1 locks handwritten Python validation before E2-S2 schema fixtures and E3 packet creation work.
+- M2 satisfied: story-level acceptance criteria preserve the non-Lens boundary, including no `feature.yaml`, governance publish, Lens branch topology, Lens constitution runtime, release clone, `.github`, or current NextLens top-down runtime dependency.
+- M3 satisfied: receipt/run-metadata verification, false-receipt fixtures, and forbidden-write fixtures are sequenced in E2 before the create workflow stories claim accepted-packet success.
+- M4 satisfied: `implementation-readiness.md` records full-track equivalence from PRD/UX/product planning artifacts to the constitution's `business-plan` requirement and from `architecture.md` to `tech-plan`.
+- M5 satisfied: `stories.md`, `sprint-status.yaml`, `implementation-readiness.md`, and 18 story files under `stories/` exist with required frontmatter. Strict metadata validation passed with no metadata errors.
+
+No accepted findings are deferred after post-bundle reconciliation.
+
 ## Reconciliation Required Before Publish/Bundle
 
-- H1: target repo/path is resolved in feature metadata and `architecture.md`; downstream stories must repeat the write boundary.
-- H2: predecessor and current review findings must be mapped into bundle outputs.
-- M1: validator mechanism must be locked before validator implementation stories.
-- M2: non-Lens negative acceptance criteria must be added to scaffold and implementation stories.
-- M3: receipt verification and false-receipt/forbidden-write fixtures must be sequenced early.
-- M4: full-track artifact names must be traced to constitutional planning artifact requirements.
-- M5: story bundle and at least one story file must exist before dev.
+- H1: resolved in feature metadata, `architecture.md`, bundle docs, sprint status, and story files.
+- H2: resolved in bundle outputs and story acceptance/context sections.
+- M1: resolved by E2-S1 sequencing.
+- M2: resolved in scaffold and implementation story acceptance criteria.
+- M3: resolved by E2 receipt/fixture sequencing before E3 create workflow acceptance.
+- M4: resolved in `implementation-readiness.md` constitutional traceability.
+- M5: resolved by generated bundle artifacts and 18 story files with required frontmatter.
 
 ## Party-Mode Challenge
 
