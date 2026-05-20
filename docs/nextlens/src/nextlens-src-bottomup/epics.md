@@ -7,7 +7,6 @@ track: full
 updated_at: 2026-05-20T00:00:00Z
 inputDocuments:
   - architecture.md
-  - architecture.md
   - brainstorm.md
   - prd.md
   - product-brief.md
@@ -41,7 +40,7 @@ The resolved constitution requires planning artifacts conceptually equivalent to
 |---|---|
 | `business-plan` planning requirement | `product-brief.md`, `research.md`, `brainstorm.md`, `prd.md`, and `ux-design.md` together define product scope, operator workflow, user outcomes, UX copy, non-effects promise, and business/user value. |
 | `tech-plan` planning requirement | `architecture.md` defines the standalone BMad module packaging, scripts, data contracts, write boundaries, validation layers, fixtures, evals, and implementation target. |
-| `stories` dev requirement | This `epics.md` plus `stories.md` define the implementable story queue. Follow-on story files are still required before Lens dev readiness is claimed. |
+| `stories` dev requirement | This `epics.md` plus `stories.md` define the implementable story queue. Individual story files are present in `stories/` and satisfy the story-file gate for dev readiness. |
 
 ## Requirements Inventory
 

@@ -7,7 +7,6 @@ track: full
 updated_at: 2026-05-20T00:00:00Z
 inputDocuments:
   - architecture.md
-  - architecture.md
   - brainstorm.md
   - prd.md
   - product-brief.md
