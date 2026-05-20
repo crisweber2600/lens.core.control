@@ -1,7 +1,7 @@
 ---
 feature: nextlens-src-bottomup
 doc_type: architecture
-status: in-progress
+status: complete
 phase: techplan
 track: full
 goal: "Define technical architecture for a standalone Bottom-Up LENS BMad module MVP."
@@ -38,7 +38,6 @@ stepsCompleted:
   - 8
 workflowType: architecture
 lastStep: 8
-status: complete
 completedAt: 2026-05-20T00:00:00Z
 project_name: "Bottom-Up LENS BMad Module"
 user_name: "BMad"
@@ -72,6 +71,14 @@ Architecture workspace initialized for `nextlens-src-bottomup` with the explicit
 - Write scope: `docs/nextlens/src/nextlens-src-bottomup`
 - Target module model: standalone BMad module following the BMad Builder documentation.
 - Implementation boundary: do not depend on existing Lens control/governance/release topology, Lens feature lifecycle commands, Lens constitution resolution, or current NextLens runtime constructs.
+
+### Applicable Hard-Gate Requirements
+
+- Planning artifacts required by constitution: `business-plan`, `tech-plan`.
+- Dev artifacts required by constitution: `stories`.
+- Review is enforced.
+- Stories are enforced before dev.
+- Gate mode is informational; no hard pre-authoring violation was detected for TechPlan architecture authoring.
 
 ### BMad Builder Guide Context
 
@@ -1055,12 +1062,4 @@ AI agents implementing this architecture must:
 Architecture is complete for the revised target: a brand-new standalone BMad module for Bottom-Up LENS packet creation. The completed plan translates the Lens-origin product requirement into BMad Builder-native module packaging and preserves the core product promise: start from one feature, write one safe packet, and prove no downstream topology side effects occurred.
 
 Recommended next workflow: proceed to FinalizePlan to produce epics, stories, implementation readiness, sprint status, and story files from this architecture.
-
-### Applicable Hard-Gate Requirements
-
-- Planning artifacts required by constitution: `business-plan`, `tech-plan`.
-- Dev artifacts required by constitution: `stories`.
-- Review is enforced.
-- Stories are enforced before dev.
-- Gate mode is informational; no hard pre-authoring violation was detected for TechPlan architecture authoring.
 
