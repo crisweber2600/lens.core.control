@@ -16,7 +16,6 @@ source_bundle_docs:
   - implementation-readiness.md
 approved_input_documents:
   - architecture.md
-  - architecture.md
   - brainstorm.md
   - prd.md
   - product-brief.md
@@ -24,18 +23,16 @@ approved_input_documents:
   - ux-design.md
 target_repo:
   name: NextLens
-  path: 'd:\lensTrees\Lens.Core.control\TargetProjects\nextlens\src\NextLens'
   relative_path: TargetProjects/nextlens/src/NextLens
 governance:
-  repo_path: 'd:\lensTrees\Lens.Core.control\TargetProjects\lens\Lens.Core.Governance'
   docs_path: features/nextlens/src/nextlens-src-bottomup/docs
   direct_writes_allowed: false
 write_boundary:
   planning_artifacts:
-    path: 'd:\lensTrees\Lens.Core.control\docs\nextlens\src\nextlens-src-bottomup'
+    relative_path: docs/nextlens/src/nextlens-src-bottomup
     allowed_for_this_artifact: true
   implementation:
-    allowed_path: 'd:\lensTrees\Lens.Core.control\TargetProjects\nextlens\src\NextLens'
+    allowed_relative_path: TargetProjects/nextlens/src/NextLens
     story_files_required_before_dev: true
   runtime_allowed_output_roots:
     - packet_output_path
