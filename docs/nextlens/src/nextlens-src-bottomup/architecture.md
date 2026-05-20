@@ -208,6 +208,12 @@ bottom-up-lens-module/
 - **Description:** Creates and verifies one safe bottom-up feature packet without inventing topology or emitting downstream side effects.
 - **Initial version:** `1.0.0` for the first distributable module package.
 
+### Implementation Target and Write Boundary
+
+FinalizePlan registers the implementation target as the `NextLens` repository at `TargetProjects/nextlens/src/NextLens` on branch `main`. Dev stories must treat that repository as the only implementation write surface for the Bottom-Up LENS module package.
+
+The module itself must still enforce its own runtime write boundary: accepted packets and reports may only be emitted under configured `packet_output_path` and `reports_output_path` roots. Implementation work must not write Lens governance metadata, Lens control-repo planning artifacts, release clones, Landscape, Graph, Salmon, promotion, adjacency, pressure, or the current NextLens top-down runtime.
+
 ### Skill Set Considered
 
 | Skill | Type | Purpose | Keep in MVP? |
