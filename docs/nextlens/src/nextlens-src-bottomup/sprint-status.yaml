@@ -1,9 +1,9 @@
 feature: nextlens-src-bottomup
 doc_type: sprint-status
-status: approved
-phase: finalizeplan
+status: dev-complete
+phase: dev
 track: full
-updated_at: 2026-05-20T00:00:00Z
+updated_at: '2026-05-20T00:00:00Z'
 project:
   name: NextLens Bottom-Up LENS
   key: NOKEY
@@ -11,61 +11,61 @@ project:
   domain: nextlens
   service: src
 source_bundle_docs:
-  - epics.md
-  - stories.md
-  - implementation-readiness.md
+- epics.md
+- stories.md
+- implementation-readiness.md
 approved_input_documents:
-  - architecture.md
-  - architecture.md
-  - brainstorm.md
-  - prd.md
-  - product-brief.md
-  - research.md
-  - ux-design.md
+- architecture.md
+- architecture.md
+- brainstorm.md
+- prd.md
+- product-brief.md
+- research.md
+- ux-design.md
 target_repo:
   name: NextLens
-  path: 'd:\lensTrees\Lens.Core.control\TargetProjects\nextlens\src\NextLens'
+  path: d:\lensTrees\Lens.Core.control\TargetProjects\nextlens\src\NextLens
   relative_path: TargetProjects/nextlens/src/NextLens
 governance:
-  repo_path: 'd:\lensTrees\Lens.Core.control\TargetProjects\lens\Lens.Core.Governance'
+  repo_path: d:\lensTrees\Lens.Core.control\TargetProjects\lens\Lens.Core.Governance
   docs_path: features/nextlens/src/nextlens-src-bottomup/docs
   direct_writes_allowed: false
 write_boundary:
   planning_artifacts:
-    path: 'd:\lensTrees\Lens.Core.control\docs\nextlens\src\nextlens-src-bottomup'
+    path: d:\lensTrees\Lens.Core.control\docs\nextlens\src\nextlens-src-bottomup
     allowed_for_this_artifact: true
   implementation:
-    allowed_path: 'd:\lensTrees\Lens.Core.control\TargetProjects\nextlens\src\NextLens'
+    allowed_path: d:\lensTrees\Lens.Core.control\TargetProjects\nextlens\src\NextLens
     story_files_required_before_dev: true
   runtime_allowed_output_roots:
-    - packet_output_path
-    - reports_output_path
+  - packet_output_path
+  - reports_output_path
   forbidden_surfaces:
-    - feature.yaml
-    - governance publish
-    - direct governance repo writes
-    - governance docs mirror writes
-    - Lens branch topology
-    - Lens constitution runtime
-    - release clones
-    - .github
-    - Lens control-repo implementation writes
-    - current NextLens top-down runtime dependency
-    - Landscape
-    - Derived Graph
-    - Salmon
-    - promotion
-    - adjacency
-    - pressure
-    - roadmap
-    - service/domain/program truth paths
-    - writes outside configured packet/report output roots
+  - feature.yaml
+  - governance publish
+  - direct governance repo writes
+  - governance docs mirror writes
+  - Lens branch topology
+  - Lens constitution runtime
+  - release clones
+  - .github
+  - Lens control-repo implementation writes
+  - current NextLens top-down runtime dependency
+  - Landscape
+  - Derived Graph
+  - Salmon
+  - promotion
+  - adjacency
+  - pressure
+  - roadmap
+  - service/domain/program truth paths
+  - writes outside configured packet/report output roots
 review_carry_forward:
   documents:
-    - preplan-adversarial-review.md
-    - businessplan-adversarial-review.md
-    - techplan-adversarial-review.md
-    - finalizeplan-review.md
+  - preplan-adversarial-review.md
+  - businessplan-adversarial-review.md
+  - techplan-adversarial-review.md
+  - finalizeplan-review.md
   metadata:
     target_and_forbidden_surfaces_required_in_story_files: true
     predecessor_and_current_review_findings_mapped: true
@@ -76,18 +76,18 @@ review_carry_forward:
 development_status:
   status_definitions:
     epic:
-      - backlog
-      - in-progress
-      - done
+    - backlog
+    - in-progress
+    - done
     story:
-      - backlog
-      - ready-for-dev
-      - in-progress
-      - review
-      - done
+    - backlog
+    - ready-for-dev
+    - in-progress
+    - review
+    - done
     retrospective:
-      - optional
-      - done
+    - optional
+    - done
   counts:
     epics: 4
     stories: 18
@@ -96,202 +96,202 @@ development_status:
     status: satisfied
     required_before_dev: true
     required_frontmatter:
-      - feature
-      - story_id
-      - doc_type
-      - status
-      - title
-      - depends_on
-      - updated_at
+    - feature
+    - story_id
+    - doc_type
+    - status
+    - title
+    - depends_on
+    - updated_at
   items:
-    - item_type: epic
-      epic_id: E1
-      title: Installable Standalone Module Boundary
-      status: in-progress
-    - item_type: story
-      epic_id: E1
-      story_id: E1-S1
-      title: Scaffold Standalone Bottom-Up LENS Module Skeleton
-      status: done
-      depends_on: []
-      expected_story_file: stories/E1-S1.md
-    - item_type: story
-      epic_id: E1
-      story_id: E1-S2
-      title: Register Setup Configuration and Help Discovery
-      status: ready-for-dev
-      depends_on:
-        - E1-S1
-      expected_story_file: stories/E1-S2.md
-    - item_type: story
-      epic_id: E1
-      story_id: E1-S3
-      title: Add Module Validation and Trigger Eval Placeholders
-      status: ready-for-dev
-      depends_on:
-        - E1-S1
-        - E1-S2
-      expected_story_file: stories/E1-S3.md
-    - item_type: story
-      epic_id: E1
-      story_id: E1-S4
-      title: Complete Marketplace and Package Metadata Decisions
-      status: ready-for-dev
-      depends_on:
-        - E1-S1
-      expected_story_file: stories/E1-S4.md
-    - item_type: retrospective
-      epic_id: E1
-      title: Epic 1 Retrospective
-      status: optional
-    - item_type: epic
-      epic_id: E2
-      title: Read-Only Validation and Non-Effects Proof
-      status: in-progress
-    - item_type: story
-      epic_id: E2
-      story_id: E2-S1
-      title: Lock Handwritten Python Packet Validation Contract
-      status: ready-for-dev
-      depends_on:
-        - E1-S1
-      expected_story_file: stories/E2-S1.md
-    - item_type: story
-      epic_id: E2
-      story_id: E2-S2
-      title: Implement Packet Schema Fixtures and Read-Only Validator
-      status: ready-for-dev
-      depends_on:
-        - E2-S1
-      expected_story_file: stories/E2-S2.md
-    - item_type: story
-      epic_id: E2
-      story_id: E2-S3
-      title: Implement BMAD Readiness as a Separate Result
-      status: ready-for-dev
-      depends_on:
-        - E2-S2
-      expected_story_file: stories/E2-S3.md
-    - item_type: story
-      epic_id: E2
-      story_id: E2-S4
-      title: Implement Path Guard and Forbidden-Write Fixtures
-      status: ready-for-dev
-      depends_on:
-        - E1-S2
-        - E2-S1
-      expected_story_file: stories/E2-S4.md
-    - item_type: story
-      epic_id: E2
-      story_id: E2-S5
-      title: Implement Receipt and Run-Metadata Verification
-      status: ready-for-dev
-      depends_on:
-        - E2-S4
-      expected_story_file: stories/E2-S5.md
-    - item_type: retrospective
-      epic_id: E2
-      title: Epic 2 Retrospective
-      status: optional
-    - item_type: epic
-      epic_id: E3
-      title: Confirmed Packet Creation Workflow
-      status: in-progress
-    - item_type: story
-      epic_id: E3
-      story_id: E3-S1
-      title: Implement Create Packet Skill Routing and Stage Prompts
-      status: ready-for-dev
-      depends_on:
-        - E1-S1
-        - E1-S2
-      expected_story_file: stories/E3-S1.md
-    - item_type: story
-      epic_id: E3
-      story_id: E3-S2
-      title: Compose Candidate, Sufficiency, and Scope Drafts
-      status: ready-for-dev
-      depends_on:
-        - E3-S1
-        - E2-S2
-        - E2-S3
-      expected_story_file: stories/E3-S2.md
-    - item_type: story
-      epic_id: E3
-      story_id: E3-S3
-      title: Render Preview, Dry Run, and Confirmation Token
-      status: ready-for-dev
-      depends_on:
-        - E3-S2
-        - E2-S4
-      expected_story_file: stories/E3-S3.md
-    - item_type: story
-      epic_id: E3
-      story_id: E3-S4
-      title: Write Packet Atomically and Emit Verified Receipt
-      status: ready-for-dev
-      depends_on:
-        - E3-S3
-        - E2-S5
-      expected_story_file: stories/E3-S4.md
-    - item_type: story
-      epic_id: E3
-      story_id: E3-S5
-      title: Handle Duplicate, Revise, Cancel, and Interrupted Runs Safely
-      status: ready-for-dev
-      depends_on:
-        - E3-S4
-      expected_story_file: stories/E3-S5.md
-    - item_type: retrospective
-      epic_id: E3
-      title: Epic 3 Retrospective
-      status: optional
-    - item_type: epic
-      epic_id: E4
-      title: Documentation, Examples, Evals, and Release Readiness
-      status: in-progress
-    - item_type: story
-      epic_id: E4
-      story_id: E4-S1
-      title: Write Standalone Module README and Command Documentation
-      status: ready-for-dev
-      depends_on:
-        - E1-S1
-        - E3-S3
-        - E2-S5
-      expected_story_file: stories/E4-S1.md
-    - item_type: story
-      epic_id: E4
-      story_id: E4-S2
-      title: Maintain Golden Valid and Invalid Examples
-      status: ready-for-dev
-      depends_on:
-        - E2-S2
-        - E2-S3
-        - E2-S5
-        - E3-S4
-      expected_story_file: stories/E4-S2.md
-    - item_type: story
-      epic_id: E4
-      story_id: E4-S3
-      title: Add Artifact and Trigger Evals for Module Behavior
-      status: ready-for-dev
-      depends_on:
-        - E1-S3
-        - E4-S2
-      expected_story_file: stories/E4-S3.md
-    - item_type: story
-      epic_id: E4
-      story_id: E4-S4
-      title: Finalize Read-Only State Contracts and Package Validation
-      status: ready-for-dev
-      depends_on:
-        - E1-S4
-        - E4-S1
-        - E4-S2
-        - E4-S3
-      expected_story_file: stories/E4-S4.md
-    - item_type: retrospective
-      epic_id: E4
-      title: Epic 4 Retrospective
-      status: optional
+  - item_type: epic
+    epic_id: E1
+    title: Installable Standalone Module Boundary
+    status: done
+  - item_type: story
+    epic_id: E1
+    story_id: E1-S1
+    title: Scaffold Standalone Bottom-Up LENS Module Skeleton
+    status: done
+    depends_on: []
+    expected_story_file: stories/E1-S1.md
+  - item_type: story
+    epic_id: E1
+    story_id: E1-S2
+    title: Register Setup Configuration and Help Discovery
+    status: done
+    depends_on:
+    - E1-S1
+    expected_story_file: stories/E1-S2.md
+  - item_type: story
+    epic_id: E1
+    story_id: E1-S3
+    title: Add Module Validation and Trigger Eval Placeholders
+    status: done
+    depends_on:
+    - E1-S1
+    - E1-S2
+    expected_story_file: stories/E1-S3.md
+  - item_type: story
+    epic_id: E1
+    story_id: E1-S4
+    title: Complete Marketplace and Package Metadata Decisions
+    status: done
+    depends_on:
+    - E1-S1
+    expected_story_file: stories/E1-S4.md
+  - item_type: retrospective
+    epic_id: E1
+    title: Epic 1 Retrospective
+    status: optional
+  - item_type: epic
+    epic_id: E2
+    title: Read-Only Validation and Non-Effects Proof
+    status: done
+  - item_type: story
+    epic_id: E2
+    story_id: E2-S1
+    title: Lock Handwritten Python Packet Validation Contract
+    status: done
+    depends_on:
+    - E1-S1
+    expected_story_file: stories/E2-S1.md
+  - item_type: story
+    epic_id: E2
+    story_id: E2-S2
+    title: Implement Packet Schema Fixtures and Read-Only Validator
+    status: done
+    depends_on:
+    - E2-S1
+    expected_story_file: stories/E2-S2.md
+  - item_type: story
+    epic_id: E2
+    story_id: E2-S3
+    title: Implement BMAD Readiness as a Separate Result
+    status: done
+    depends_on:
+    - E2-S2
+    expected_story_file: stories/E2-S3.md
+  - item_type: story
+    epic_id: E2
+    story_id: E2-S4
+    title: Implement Path Guard and Forbidden-Write Fixtures
+    status: done
+    depends_on:
+    - E1-S2
+    - E2-S1
+    expected_story_file: stories/E2-S4.md
+  - item_type: story
+    epic_id: E2
+    story_id: E2-S5
+    title: Implement Receipt and Run-Metadata Verification
+    status: done
+    depends_on:
+    - E2-S4
+    expected_story_file: stories/E2-S5.md
+  - item_type: retrospective
+    epic_id: E2
+    title: Epic 2 Retrospective
+    status: optional
+  - item_type: epic
+    epic_id: E3
+    title: Confirmed Packet Creation Workflow
+    status: done
+  - item_type: story
+    epic_id: E3
+    story_id: E3-S1
+    title: Implement Create Packet Skill Routing and Stage Prompts
+    status: done
+    depends_on:
+    - E1-S1
+    - E1-S2
+    expected_story_file: stories/E3-S1.md
+  - item_type: story
+    epic_id: E3
+    story_id: E3-S2
+    title: Compose Candidate, Sufficiency, and Scope Drafts
+    status: done
+    depends_on:
+    - E3-S1
+    - E2-S2
+    - E2-S3
+    expected_story_file: stories/E3-S2.md
+  - item_type: story
+    epic_id: E3
+    story_id: E3-S3
+    title: Render Preview, Dry Run, and Confirmation Token
+    status: done
+    depends_on:
+    - E3-S2
+    - E2-S4
+    expected_story_file: stories/E3-S3.md
+  - item_type: story
+    epic_id: E3
+    story_id: E3-S4
+    title: Write Packet Atomically and Emit Verified Receipt
+    status: done
+    depends_on:
+    - E3-S3
+    - E2-S5
+    expected_story_file: stories/E3-S4.md
+  - item_type: story
+    epic_id: E3
+    story_id: E3-S5
+    title: Handle Duplicate, Revise, Cancel, and Interrupted Runs Safely
+    status: done
+    depends_on:
+    - E3-S4
+    expected_story_file: stories/E3-S5.md
+  - item_type: retrospective
+    epic_id: E3
+    title: Epic 3 Retrospective
+    status: optional
+  - item_type: epic
+    epic_id: E4
+    title: Documentation, Examples, Evals, and Release Readiness
+    status: done
+  - item_type: story
+    epic_id: E4
+    story_id: E4-S1
+    title: Write Standalone Module README and Command Documentation
+    status: done
+    depends_on:
+    - E1-S1
+    - E3-S3
+    - E2-S5
+    expected_story_file: stories/E4-S1.md
+  - item_type: story
+    epic_id: E4
+    story_id: E4-S2
+    title: Maintain Golden Valid and Invalid Examples
+    status: done
+    depends_on:
+    - E2-S2
+    - E2-S3
+    - E2-S5
+    - E3-S4
+    expected_story_file: stories/E4-S2.md
+  - item_type: story
+    epic_id: E4
+    story_id: E4-S3
+    title: Add Artifact and Trigger Evals for Module Behavior
+    status: done
+    depends_on:
+    - E1-S3
+    - E4-S2
+    expected_story_file: stories/E4-S3.md
+  - item_type: story
+    epic_id: E4
+    story_id: E4-S4
+    title: Finalize Read-Only State Contracts and Package Validation
+    status: done
+    depends_on:
+    - E1-S4
+    - E4-S1
+    - E4-S2
+    - E4-S3
+    expected_story_file: stories/E4-S4.md
+  - item_type: retrospective
+    epic_id: E4
+    title: Epic 4 Retrospective
+    status: optional
