@@ -1,0 +1,19 @@
+stable_id: feature:lens-seed-improvements
+entity_type: feature
+title: Lens Seed Improvements
+belongs_to: unknown
+status: intake
+publication_state: draft
+updated_at: '2026-05-22T00:00:00Z'
+feature_id: lens-seed-improvements
+track: full
+phase: preplan
+docs_path: docs/features/lens-seed-improvements
+related_to:
+  - nextlens-src-topdownlens
+depends_on: []
+target_repos: []
+promotion_status: not_started
+salmon_upstream: []
+salmon_status: none
+lens_preflight_status: passed
