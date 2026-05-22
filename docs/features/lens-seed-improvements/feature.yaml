@@ -7,10 +7,10 @@ publication_state: draft
 updated_at: '2026-05-22T12:00:00Z'
 feature_id: lens-seed-improvements
 track: full
-phase: preplan
+phase: preplan-complete
 docs_path: docs/features/lens-seed-improvements
 related_to:
-  - nextlens-src-topdownlens
+- nextlens-src-topdownlens
 depends_on: []
 target_repos: []
 promotion_status: not_started
@@ -19,7 +19,8 @@ salmon_status: none
 lens_preflight_status: passed
 preplan_status: blocked
 blockers:
-  - code: domain_service_feature_gate
-    summary: Current PrePlan conductor requires governance feature-index plus domain/service constitution scope.
-    decision: Preserve this as a domain/service-free two-tree redesign work item instead of routing through a legacy domain/service placeholder.
-
+- code: domain_service_feature_gate
+  summary: Current PrePlan conductor requires governance feature-index plus domain/service
+    constitution scope.
+  decision: Preserve this as a domain/service-free two-tree redesign work item instead
+    of routing through a legacy domain/service placeholder.
