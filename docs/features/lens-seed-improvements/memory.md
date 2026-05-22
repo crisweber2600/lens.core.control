@@ -10,6 +10,7 @@
 - Normalized the feature ID to `lens-seed-improvements`; preserved the original spelling in raw intent.
 - Selected the full lifecycle track because the request is not yet implementation-ready and needs discovery.
 - Left `belongs_to` and `target_repos` unresolved rather than guessing ownership.
+- User selected option 2 after PrePlan blocked: keep `lens-seed-improvements` as a domain/service-free two-tree feature archive and treat the PrePlan blocker as redesign evidence.
 
 ## Related Context
 
@@ -28,8 +29,10 @@
 - Confirm whether the owning area is NextLens source, Lens core workflow, or another Lens service.
 - Confirm whether this should remain full-track or be converted to express after scope is clarified.
 - Identify target repositories after ownership is known.
+- Redesign or adapt PrePlan context and constitution gates so domain/service-free feature archives can enter planning without fabricating legacy hierarchy.
 
 ## Discarded Options
 
 - Did not create implementation stories during intake.
 - Did not attach the work to a specific target repo without evidence.
+- Did not route PrePlan through `domain=nextlens`, `service=src`; that would hide the structural blocker this feature is meant to expose.

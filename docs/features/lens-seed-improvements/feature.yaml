@@ -2,9 +2,9 @@ stable_id: feature:lens-seed-improvements
 entity_type: feature
 title: Lens Seed Improvements
 belongs_to: unknown
-status: intake
+status: intake-blocked
 publication_state: draft
-updated_at: '2026-05-22T00:00:00Z'
+updated_at: '2026-05-22T12:00:00Z'
 feature_id: lens-seed-improvements
 track: full
 phase: preplan
@@ -17,3 +17,9 @@ promotion_status: not_started
 salmon_upstream: []
 salmon_status: none
 lens_preflight_status: passed
+preplan_status: blocked
+blockers:
+  - code: domain_service_feature_gate
+    summary: Current PrePlan conductor requires governance feature-index plus domain/service constitution scope.
+    decision: Preserve this as a domain/service-free two-tree redesign work item instead of routing through a legacy domain/service placeholder.
+

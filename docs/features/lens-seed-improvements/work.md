@@ -2,12 +2,12 @@
 stable_id: feature:lens-seed-improvements
 entity_type: feature
 title: Lens Seed Improvements
-status: intake
+status: intake-blocked
 publication_state: draft
 work_id: lens-seed-improvements
 feature_id: lens-seed-improvements
 created_at: '2026-05-22T00:00:00Z'
-updated_at: '2026-05-22T00:00:00Z'
+updated_at: '2026-05-22T12:00:00Z'
 related_to:
   - nextlens-src-topdownlens
 lifecycle_stage: preplan
@@ -43,12 +43,21 @@ Turn the raw request "lens seed improvments" into a durable Lens work unit for i
 
 The closest existing context is the TopDownLens seed concept: small raw seeds are explored, focused into implementation slices, then promoted into capabilities and follow-on seeds. This intake keeps that context available without treating it as final scope.
 
+## PrePlan Blocker
+
+The current PrePlan conductor cannot proceed cleanly for this work unit because the feature is intentionally domain/service-free:
+
+- `lens-init-feature fetch-context` expects `lens-seed-improvements` to exist in the governance `feature-index.yaml`.
+- `lens-constitution progressive-display` requires a legacy `domain` and `service` scope.
+- The user selected the domain/service-free route, so this blocker is part of the redesign evidence rather than a reason to invent a legacy home.
+
 ## Risks And Open Questions
 
 - The request may refer to a specific command, schema, or UX issue that has not been stated yet.
 - The owning area is unknown: candidate areas include NextLens source, Lens core workflow commands, or planning documentation.
 - Target repositories are unknown and should not be guessed during intake.
 - The typo in the raw request was normalized in the feature ID as `improvements`; the original wording is preserved in `memory.md`.
+- Existing PrePlan tooling still assumes the old domain/service/feature construct and blocks domain/service-free feature archives.
 
 ## Completion Evidence
 
