@@ -70,6 +70,8 @@ MVP1 reporting should consume stable, read-only projection data. The seed implem
 - Salmon support records upstream-impact signals and recursive consistency findings.
 - Reporting snapshots include freshness, source failure details, phase distribution, active feature counts, risks, and blockers.
 
+The durable seed contract is captured in `auspex-contracts.md`; implementation work should keep code-facing schema names aligned with that document.
+
 ## Testing Strategy
 
 Use focused tests around the changed branch contracts:
@@ -93,4 +95,3 @@ Given/When/Then validation for the implementation:
 3. Update conductor contracts and tests.
 4. Add migration/audit guidance for existing features.
 5. Use Auspex follow-up stories for stable IDs, derived maps, doctor, Salmon, and MVP1 reporting UI contracts.
-
