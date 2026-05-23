@@ -7,7 +7,7 @@ publication_state: draft
 updated_at: '2026-05-22T12:00:00Z'
 feature_id: lens-seed-improvements
 track: full
-phase: preplan-complete
+phase: businessplan-complete
 docs_path: docs/features/lens-seed-improvements
 related_to:
 - nextlens-src-topdownlens
