@@ -2,11 +2,11 @@
 feature: lens-seed-improvements
 story_id: LSI-002
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Shared Inventory And Frontmatter Parser"
 depends_on:
   - LSI-001
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Shared Metadata And Relationship Foundation"
 priority: P0
@@ -69,3 +69,9 @@ The parser must support new two-tree metadata while keeping legacy topology file
 
 - Depends on LSI-001.
 - Blocks LSI-003, LSI-006, and LSI-010.
+
+## Dev Agent Record
+
+- Implemented shared nested YAML/frontmatter inventory parsing in `skills/lens-setup/scripts/lens_seed_core.py`.
+- Parser normalizes source paths, duplicate diagnostics, missing fields, ledgers, and compatibility source kind.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

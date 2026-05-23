@@ -2,10 +2,10 @@
 feature: lens-seed-improvements
 story_id: LSI-001
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Shared Metadata Schema And Golden Fixtures"
 depends_on: []
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Shared Metadata And Relationship Foundation"
 priority: P0
@@ -69,3 +69,9 @@ The temporary `belongs_to: unknown` waiver for `feature:lens-seed-improvements` 
 
 - No story dependencies.
 - Blocks LSI-002, LSI-003, LSI-006, and LSI-010.
+
+## Dev Agent Record
+
+- Implemented in target branch `feature/lens-seed-improvements`.
+- Produced shared metadata schema updates and golden fixture sets under `skills/lens-setup/assets/fixtures/`.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

@@ -2,7 +2,7 @@
 feature: lens-seed-improvements
 story_id: LSI-010
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Release Validation Or VM-Style Module Validation For lens.core.src"
 depends_on:
   - LSI-001
@@ -14,7 +14,7 @@ depends_on:
   - LSI-007
   - LSI-008
   - LSI-009
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Release Validation For lens.core.src"
 priority: P0
@@ -77,3 +77,9 @@ Module Builder validation remains a release gate from LSI-008. The temporary `be
 
 - Depends on LSI-001, LSI-002, LSI-003, LSI-004, LSI-005, LSI-006, LSI-007, LSI-008, and LSI-009.
 - This is the release and Dev-closeout validation story for the sprint.
+
+## Dev Agent Record
+
+- Added repeatable release validation in `skills/lens-setup/scripts/release-validate.py`.
+- Release validation covers doctor, projection check, Salmon, promotion, module asset validation, projection drift, and waiver closure using the release fixture set.
+- Validation: `uv run python skills/lens-setup/scripts/release-validate.py . --feature-archive-path skills/lens-setup/assets/fixtures/seed_release --landscape-root skills/lens-setup/assets/fixtures/seed_release --reporting-output-path _bmad-output/lens --include-drafts` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

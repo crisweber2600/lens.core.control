@@ -1,7 +1,7 @@
 feature: lens-seed-improvements
 doc_type: sprint-status
-status: draft
-updated_at: "2026-05-23T00:00:00Z"
+status: complete
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 sprint_name: "Lens Seed Improvements FinalizePlan Dev Sprint"
 sprint_goal: "Deliver the metadata, topology, projection, Salmon, module registration, lifecycle, and release validation foundations needed for two-tree Lens feature governance."
@@ -22,7 +22,7 @@ stories:
   - story_id: LSI-001
     title: "Shared Metadata Schema And Golden Fixtures"
     epic: "Shared Metadata And Relationship Foundation"
-    status: planned
+    status: done
     priority: P0
     depends_on: []
     story_file: stories/LSI-001-shared-metadata-schema-and-golden-fixtures.md
@@ -30,7 +30,7 @@ stories:
   - story_id: LSI-002
     title: "Shared Inventory And Frontmatter Parser"
     epic: "Shared Metadata And Relationship Foundation"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-001
@@ -39,7 +39,7 @@ stories:
   - story_id: LSI-003
     title: "Relationship Resolver And Topology Waiver Validation"
     epic: "Shared Metadata And Relationship Foundation"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-001
@@ -49,7 +49,7 @@ stories:
   - story_id: LSI-004
     title: "Topology Doctor Phase-Aware Severity"
     epic: "Topology Doctor And Projection Rebuild"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-003
@@ -58,7 +58,7 @@ stories:
   - story_id: LSI-005
     title: "Projection Rebuild Check, Write, Explain, And JSON Modes"
     epic: "Topology Doctor And Projection Rebuild"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-003
@@ -68,7 +68,7 @@ stories:
   - story_id: LSI-006
     title: "Salmon Signal Schema, State Transitions, And Deterministic Cluster Report"
     epic: "Salmon Impact And Ledger Promotion"
-    status: planned
+    status: done
     priority: P1
     depends_on:
       - LSI-001
@@ -80,7 +80,7 @@ stories:
   - story_id: LSI-007
     title: "Ledger Promotion Provenance And Pilot service:lens-workbench Verification"
     epic: "Salmon Impact And Ledger Promotion"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-003
@@ -91,7 +91,7 @@ stories:
   - story_id: LSI-008
     title: "module.yaml, module-help.csv, Prompt Registration, And Anti-Zombie Setup Validation"
     epic: "Module Registration And Two-Tree Lifecycle Compatibility"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-005
@@ -102,7 +102,7 @@ stories:
   - story_id: LSI-009
     title: "Compatibility And Lifecycle Validation For Two-Tree Features"
     epic: "Module Registration And Two-Tree Lifecycle Compatibility"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-003
@@ -114,7 +114,7 @@ stories:
   - story_id: LSI-010
     title: "Release Validation Or VM-Style Module Validation For lens.core.src"
     epic: "Release Validation For lens.core.src"
-    status: planned
+    status: done
     priority: P0
     depends_on:
       - LSI-001

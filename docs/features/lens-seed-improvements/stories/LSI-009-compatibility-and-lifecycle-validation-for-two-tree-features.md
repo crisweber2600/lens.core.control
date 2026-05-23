@@ -2,14 +2,14 @@
 feature: lens-seed-improvements
 story_id: LSI-009
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Compatibility And Lifecycle Validation For Two-Tree Features"
 depends_on:
   - LSI-003
   - LSI-004
   - LSI-005
   - LSI-007
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Module Registration And Two-Tree Lifecycle Compatibility"
 priority: P0
@@ -71,3 +71,9 @@ This story depends on LSI-007 for the closeout rule: unresolved `belongs_to: unk
 
 - Depends on LSI-003, LSI-004, LSI-005, and LSI-007.
 - Blocks LSI-010.
+
+## Dev Agent Record
+
+- Added lifecycle validation for two-tree records, compatibility source kind, branch/phase separation warnings, target repo readiness, and waiver visibility.
+- Dev-completion checks accept the pilot `service:lens-workbench` ledger relationship or a complete reviewed exception.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

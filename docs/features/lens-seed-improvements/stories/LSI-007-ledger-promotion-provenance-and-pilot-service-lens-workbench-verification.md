@@ -2,13 +2,13 @@
 feature: lens-seed-improvements
 story_id: LSI-007
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Ledger Promotion Provenance And Pilot service:lens-workbench Verification"
 depends_on:
   - LSI-003
   - LSI-005
   - LSI-006
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Salmon Impact And Ledger Promotion"
 priority: P0
@@ -70,3 +70,9 @@ Ledger promotion is explicit and audited. It must not happen as a side effect of
 
 - Depends on LSI-003, LSI-005, and LSI-006.
 - Blocks LSI-008, LSI-009, and LSI-010.
+
+## Dev Agent Record
+
+- Added ledger promotion provenance review and material Salmon blocking checks.
+- Added `lens-ledger-promotion` CLI wrapper and pilot `service:lens-workbench` release fixture.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

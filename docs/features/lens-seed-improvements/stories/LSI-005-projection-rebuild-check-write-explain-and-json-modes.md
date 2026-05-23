@@ -2,12 +2,12 @@
 feature: lens-seed-improvements
 story_id: LSI-005
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Projection Rebuild Check, Write, Explain, And JSON Modes"
 depends_on:
   - LSI-003
   - LSI-004
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Topology Doctor And Projection Rebuild"
 priority: P0
@@ -70,3 +70,9 @@ The architecture points to `skills/lens-projection-rebuild/scripts/lens_projecti
 
 - Depends on LSI-003 and LSI-004.
 - Blocks LSI-007, LSI-008, LSI-009, and LSI-010.
+
+## Dev Agent Record
+
+- Reworked `lens_projection.py` as a CLI front end for check, write, explain, JSON, include-drafts, deterministic timestamp handling, drift checks, and blocker refusal.
+- Projection writes only `governance-map.json` and `governance-map.md` under the explicit reporting output path.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

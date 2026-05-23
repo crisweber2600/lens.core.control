@@ -2,12 +2,12 @@
 feature: lens-seed-improvements
 story_id: LSI-003
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Relationship Resolver And Topology Waiver Validation"
 depends_on:
   - LSI-001
   - LSI-002
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Shared Metadata And Relationship Foundation"
 priority: P0
@@ -69,3 +69,9 @@ The architecture treats `belongs_to: unknown` as a planned topology debt state, 
 
 - Depends on LSI-001 and LSI-002.
 - Blocks LSI-004, LSI-005, LSI-006, LSI-007, LSI-009, and LSI-010.
+
+## Dev Agent Record
+
+- Implemented relationship edge generation, parent validation, cycle detection, and topology waiver completeness checks.
+- Pilot ledger fixture links `service:lens-workbench` to `feature:lens-seed-improvements`.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

@@ -2,14 +2,14 @@
 feature: lens-seed-improvements
 story_id: LSI-006
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Salmon Signal Schema, State Transitions, And Deterministic Cluster Report"
 depends_on:
   - LSI-001
   - LSI-002
   - LSI-003
   - LSI-004
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Salmon Impact And Ledger Promotion"
 priority: P1
@@ -70,3 +70,9 @@ Feature A/B/C fixtures from LSI-001 provide the deterministic cluster case: at l
 
 - Depends on LSI-001, LSI-002, LSI-003, and LSI-004.
 - Blocks LSI-007, LSI-008, and LSI-010.
+
+## Dev Agent Record
+
+- Added Salmon signal parsing, materiality classification, legal transition validation, and deterministic candidate clustering.
+- Added `lens-salmon-impact` CLI wrapper and Feature A/B/C fixture coverage.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

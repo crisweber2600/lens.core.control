@@ -2,13 +2,13 @@
 feature: lens-seed-improvements
 story_id: LSI-008
 doc_type: story
-status: ready-for-dev
+status: done
 title: "module.yaml, module-help.csv, Prompt Registration, And Anti-Zombie Setup Validation"
 depends_on:
   - LSI-005
   - LSI-006
   - LSI-007
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Module Registration And Two-Tree Lifecycle Compatibility"
 priority: P0
@@ -71,3 +71,9 @@ The multi-skill Lens module must use setup-skill registration and anti-zombie me
 
 - Depends on LSI-005, LSI-006, and LSI-007.
 - Blocks LSI-010.
+
+## Dev Agent Record
+
+- Updated module help descriptions and added module asset validation for orphan help entries, duplicate menu codes, weak descriptions, and progressive disclosure risk.
+- Added setup anti-zombie idempotency test coverage and a `lens-core-bugfix` source skill stub to satisfy registered help surface validation.
+- Validation: `uv run python -m pytest -q` and `uv run python skills/lens-setup/scripts/validate-module-assets.py .` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.

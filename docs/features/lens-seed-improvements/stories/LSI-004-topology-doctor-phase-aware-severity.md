@@ -2,11 +2,11 @@
 feature: lens-seed-improvements
 story_id: LSI-004
 doc_type: story
-status: ready-for-dev
+status: done
 title: "Topology Doctor Phase-Aware Severity"
 depends_on:
   - LSI-003
-updated_at: "2026-05-23T00:00:00Z"
+updated_at: "2026-05-23T15:00:00Z"
 target_repo: TargetProjects/lens-dev/new-codebase/lens.core.src
 epic: "Topology Doctor And Projection Rebuild"
 priority: P0
@@ -68,3 +68,9 @@ This story must prove that `belongs_to: unknown`, waiver completeness, duplicate
 
 - Depends on LSI-003.
 - Blocks LSI-005, LSI-006, LSI-009, and LSI-010.
+
+## Dev Agent Record
+
+- Added read-only `lens-doctor` CLI wrapper and shared doctor checks for severity, waivers, lifecycle, Lens context, links, and Salmon diagnostics.
+- Preserved existing doctor test compatibility while adding two-tree fixture coverage.
+- Validation: `uv run python -m pytest -q` passed in `TargetProjects/lens-dev/new-codebase/lens.core.src`.
