@@ -43,6 +43,20 @@ No fail-level issue remains after the pre-review metadata fixes below. The remai
 3. **Kept feature archive permanence intact.**
    The feature remains under `docs/features/lens-seed-improvements`; no topology movement or governance hand-copy was performed.
 
+## Post-Bundle Metadata Reconciliation
+
+1. **Generated the downstream bundle.**
+   `epics.md`, `stories.md`, `implementation-readiness.md`, `sprint-status.yaml`, and per-story files under `stories/` now exist in the staged docs path.
+
+2. **Reconciled readiness state.**
+   `implementation-readiness.md` now reports sprint status and story files as present, while preserving topology waiver closure and Module Builder validation as release gates.
+
+3. **Reconciled sprint status.**
+   `sprint-status.yaml` now marks the pre-Dev story file gate as satisfied and keeps LSI-001 through LSI-010 mapped to story files.
+
+4. **Preserved intentional deferrals.**
+   Full Salmon workbench UI, broad historical migration, always-blocking Salmon policy, and mature program/domain/service hierarchy remain deferred.
+
 ## Review Packet
 
 - PrePlan: `brainstorm.md`, `research.md`, `product-brief.md`, and `preplan-adversarial-review.md` establish the two-tree model and local technical research limits.
