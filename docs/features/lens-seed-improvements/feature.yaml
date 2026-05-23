@@ -12,11 +12,28 @@ docs_path: docs/features/lens-seed-improvements
 related_to:
 - nextlens-src-topdownlens
 depends_on: []
-target_repos: []
+target_repos:
+- name: lens.core.src
+  local_path: TargetProjects/lens-dev/new-codebase/lens.core.src
+  role: implementation
+  default_branch: develop
 promotion_status: not_started
 salmon_upstream: []
 salmon_status: none
 lens_preflight_status: passed
+topology_waiver:
+  code: belongs_to_unknown
+  status: accepted
+  owner: Lens maintainer
+  rationale: The feature intentionally designs the two-tree model and cannot attach
+    to service:lens-workbench until the pilot ledger implementation exists. FinalizePlan
+    stories must create or verify the pilot ledger path before Dev completion.
+  affected_stable_ids:
+  - feature:lens-seed-improvements
+  review_point: finalizeplan
+  expires_at: ''
+  impacted_gate: finalizeplan
+  accepted_at: '2026-05-23T00:00:00Z'
 preplan_status: blocked
 blockers:
 - code: domain_service_feature_gate
