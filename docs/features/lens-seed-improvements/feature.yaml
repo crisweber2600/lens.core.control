@@ -41,3 +41,5 @@ blockers:
     constitution scope.
   decision: Preserve this as a domain/service-free two-tree redesign work item instead
     of routing through a legacy domain/service placeholder.
+links:
+  pull_request: https://github.com/crisweber2600/Lens.Core.Src/pull/155
