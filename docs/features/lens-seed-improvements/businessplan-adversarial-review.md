@@ -14,7 +14,7 @@ predecessor_artifacts:
   - preplan-adversarial-review.md
 constitution_levels:
   - org
-status: complete
+status: responses-recorded
 created: "2026-05-23"
 updated: "2026-05-23"
 ---
@@ -91,6 +91,12 @@ Quinn (Quality): The UX uses advisory, material, blocked, waived, and resolved s
 3. What metadata makes a `belongs_to: unknown` waiver valid and machine-readable?
 4. Which clustering rules are deterministic, and which are maintainer-curated?
 5. Which Salmon state transitions require reviewer, timestamp, rationale, or affected stable IDs?
+
+## Operator Response Record
+
+The TechPlan direction is to use the BMAD Module Builder reference at `https://bmad-builder-docs.bmad-method.org/llms-full.txt` as the external method source for enhancing `lens.core.src`. TechPlan should translate the BusinessPlan findings into architecture for module-builder-backed Lens source improvements, with special attention to projection authority, module skill packaging, validator contracts, and a narrow implementation slice that can prove the Salmon rollup workflow without turning reporting into an authoring surface.
+
+Unresolved BusinessPlan questions remain open architecture decisions unless explicitly resolved in `architecture.md`.
 
 ## Phase Gate Decision
 
