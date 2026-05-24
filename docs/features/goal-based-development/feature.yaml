@@ -7,7 +7,7 @@ publication_state: draft
 updated_at: '2026-05-24T03:52:45Z'
 feature_id: goal-based-development
 track: full
-phase: preplan
+phase: preplan-complete
 docs_path: docs/features/goal-based-development
 related_to: []
 depends_on: []
