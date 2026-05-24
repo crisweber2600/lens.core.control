@@ -1,0 +1,18 @@
+stable_id: feature:goal-based-development
+entity_type: feature
+title: Goal Based Development
+belongs_to: unknown
+status: intake
+publication_state: draft
+updated_at: '2026-05-24T03:52:45Z'
+feature_id: goal-based-development
+track: full
+phase: preplan
+docs_path: docs/features/goal-based-development
+related_to: []
+depends_on: []
+target_repos: []
+promotion_status: not_started
+salmon_upstream: false
+salmon_status: none
+lens_preflight_status: passed
