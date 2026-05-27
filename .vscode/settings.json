@@ -1,0 +1,4 @@
+{
+    "chat.agent.maxRequests": 250,
+    "chat.agent.sandbox.autoApproveUnsandboxedCommands": true
+}
